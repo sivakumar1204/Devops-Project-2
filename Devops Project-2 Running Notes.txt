@@ -1,0 +1,75 @@
+Devops Project 2:
+
+Tools whcih are used in this Project
+
+Github
+Maven
+Jenkins
+SonarQube
+JFrog Artifactory
+Promotheous Grafana
+Kuernetes
+Helm
+Terraform 
+Ansible
+
+
+
+We are using Github for Source Code, Code will be pulled with the help of Jenkins, In Jenkins we have master and slave configuration slave will be used as a build node, in build node will install maven it builds the code, Once the code is built, we will run the SonarQube analysis if analysis is successful will commit our artifacts into our JFrog artifactory as a war or jar files as an artifactory.
+We are going to deploy it as a micro service we are using docker with the help of docker we are going to create a docker image this docker images again stored into the JFrog artifactory, then we are deploying it into the K8S cluster or K8S environment with help of helm charts, This K8S environment or pods are monitored by the Prometheus and Grafana, in this project most of infrastructure is provisioned using Terraform and Configuration management is with Ansible. like Jenkins setup and slave system configuration, K8S deployment we are using Terraform
+
+
+Overall setup is done on AWS.
+
+Topics to be coverd in this course:
+====================================
+1)Setup Terraform
+
+2)provision Jenkins Master,build node, and Ansible using Terraform.
+
+3)Setup Ansible Server
+
+4)Configure Jenkins master and build node using Ansible.
+
+5)Create Jenkins pipeline from scrach
+
+6)Create Jenkins fie from scrach
+
+7)Create multi Branch Pipeline
+
+8)Enable webhook on Github
+
+9)Configure SonarQube and Sonar Scanner
+
+10)Execugute Sonar analysis
+
+11)Define rules and gates of SonarQube
+
+12)Sonar callback rules
+
+13)JFrog artifactory setup
+
+14)Create Docker File
+
+15)Store Docker images on Artifactory.
+
+16)Provision K8S cluster using Terraform.
+
+17)Create K8S objects
+
+18)Deploy the K8s objects using helm
+
+19) Setup Promotheous and Grafana using helm charts.
+
+20)Monitor K8S cluster using Promotheous.
+
+
+Tools Required to Start the course:
+===================================
+
+1)Visual Studio Code
+2)Git
+3)AWS CLI
+4)Terraform
+5)Putty or MobiXterm
+
